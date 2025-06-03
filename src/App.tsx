@@ -3,6 +3,8 @@ import { useState } from 'react';
 import styles from './App.module.css';
 import poweredImage from './assets/powered.png';
 
+import { Level, calculateImc } from './helpers/imc';
+
 const App =() => {
   const [heightField, setHeightField] = useState<number>(0);
   const [weightField, setWeightField] = useState<number>(0);
@@ -46,7 +48,7 @@ const App =() => {
         </div>
 
         <div className={styles.rightSide}>
-          ...
+          
         </div>
       </div>
     </div>
